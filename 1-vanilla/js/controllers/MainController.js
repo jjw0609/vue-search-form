@@ -14,14 +14,6 @@ export default {
         ResultView.setup(document.querySelector('#search-result'))
     },
 
-    search(query) {
-        console.log(tag, 'search()', query);
-        SearchModel.list(query).then(data => {
-            this.onSearchResult(data);
-        })
-        this.onSearchResult([]);
-    },
-
     onSubmit(input) {
         console.log(tag, 'onSubmit()', input);
         this.search(input);
@@ -29,6 +21,15 @@ export default {
 
     onResetForm() {
         console.log(tag, 'onResetForm()');
+        ResultView.hide();
+    },
+
+    search(query) {
+        console.log(tag, 'search()', query);
+        SearchModel.list(query).then(data => {
+            this.onSearchResult(data);
+        })
+        this.onSearchResult([]);
     },
 
     onSearchResult(data) {
