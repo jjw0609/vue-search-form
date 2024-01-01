@@ -1,6 +1,11 @@
 new Vue({
     el: '#app',
     data: {
-        msg: 'hello world'
+        query: 'abc'
+    },
+    methods: {
+        onSubmit(e) {
+
+        }
     }
 })
