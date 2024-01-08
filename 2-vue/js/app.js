@@ -29,8 +29,8 @@ new Vue({
 
         resetForm(e) {
             this.query = '';
-            // todo 검색결과를 숨기는 ...
-            debugger;
+            this.submitted = false;
+            this.searchResult = [];
         },
     }
 })
