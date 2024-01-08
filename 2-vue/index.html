@@ -31,6 +31,13 @@
                 {{query}} 검색어로 찾을 수 없습니다.
             </div>
         </div>
+        <div v-else>
+            <ul class="tabs">
+                <li v-for="tab in tabs" v-bind:class="{active: tab === selectedTab}">
+                    {{tab}}
+                </li>
+            </ul>
+        </div>
     </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
