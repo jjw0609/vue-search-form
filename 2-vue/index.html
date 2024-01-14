@@ -40,7 +40,17 @@
             </ul>
 
             <div v-if="selectedTab === tabs[0]">
-                추천 검색어 목록
+                <div v-if="keywords.length">
+                    <ul class="list">
+                        <li v-for="(item, index) in keywords" v-on:click="onClickKeyword(item.keyword)">
+                            <span class="number">{{index + 1}}</span>
+                            {{item.keyword}}
+                        </li>
+                    </ul>
+                </div>
+                <div v-else>
+                    추천 검색어가 없습니다.
+                </div>
             </div>
             <div v-else>
                 최근 검색어 목록
