@@ -53,7 +53,18 @@
                 </div>
             </div>
             <div v-else>
-                최근 검색어 목록
+                <div v-if="history.length">
+                    <ul class="list">
+                        <li v-for="item in history" v-on:click="onClickHistory(item.keyword)">
+                            {{item.keyword}}
+                            <span class="data">{{item.date}}</span>
+                            <button class="btn-remove"></button>
+                        </li>
+                    </ul>
+                </div>
+                <div v-else>
+                    최근 검색어가 없습니다.
+                </div>
             </div>
         </div>
     </div>
