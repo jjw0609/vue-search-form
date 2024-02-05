@@ -14,7 +14,11 @@
     </header>
 
     <div class="container">
-<!--        <search-form></search-form>-->
+        <form v-on:submit.prevent="onSubmit">
+            <input type="text" v-model="query" v-on:keyup="onKeyup" placeholder="검색어를 입력하세요" autofocus />
+            <button v-show="query.length" v-on:click="onReset" type="reset" class="btn-reset"></button>
+        </form>
+
         <div v-if="submitted">
             <div v-if="searchResult.length">
                 <ul>
@@ -69,10 +73,3 @@
 <script type="module" src="./js/app.js" defer></script>
 </body>
 </html>
-
-<template id="search-form">
-    <form v-on:submit.prevent="onSubmit">
-        <input type="text" v-model="query" v-on:keyup="onKeyup" placeholder="검색어를 입력하세요" autofocus />
-        <button v-show="query.length" v-on:click="onReset" type="reset" class="btn-reset">s</button>
-    </form>
-</template>
