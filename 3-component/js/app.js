@@ -1,10 +1,11 @@
-import SearchModel from "./models/SearchModel.js";
-import KeywordModel from "./models/KeywordModel.js";
-import HistoryModel from "./models/HistoryModel.js";
+import SearchModel from './models/SearchModel.js'
+import KeywordModel from './models/KeywordModel.js'
+import HistoryModel from './models/HistoryModel.js'
 
-import FormComponent from './component/FormComponent.js';
-import ResultComponent from "./component/ResultComponent.js";
-import ListComponent from './component/ListComponent.js';
+import FormComponent from './components/FormComponent.js'
+import ResultComponent from './components/ResultComponent.js'
+import ListComponent from './components/ListComponent.js'
+import TabComponent from './components/TabComponent.js';
 
 new Vue({
     el: '#app',
@@ -20,62 +21,55 @@ new Vue({
     components: {
         'search-form': FormComponent,
         'search-result': ResultComponent,
-        'list': ListComponent
+        'list': ListComponent,
+        'tabs': TabComponent
     },
     created() {
-      this.selectedTab = this.tabs[0];
-      this.fetchKeyword();
-      this.fetchHistory();
+        this.selectedTab = this.tabs[0]
+        this.fetchKeyword()
+        this.fetchHistory()
     },
     methods: {
         onSubmit(query) {
-            this.query = query;
-            this.search();
+            this.query = query
+            this.search()
         },
-
         onReset(e) {
-            this.resetForm();
+            this.resetForm()
         },
-
         onClickTab(tab) {
-            this.selectedTab = tab;
+            this.selectedTab = tab
         },
-
         onClickKeyword(keyword) {
-          this.query = keyword;
-          this.search();
+            this.query = keyword;
+            this.search()
         },
-
         onClickRemoveHistory(keyword) {
-            HistoryModel.remove(keyword);
-            this.fetchHistory();
+            HistoryModel.remove(keyword)
+            this.fetchHistory()
         },
-
         fetchKeyword() {
             KeywordModel.list().then(data => {
-                this.keywords = data;
+                this.keywords = data
             })
         },
-
         fetchHistory() {
             HistoryModel.list().then(data => {
-                this.history = data;
+                this.history = data
             })
         },
-
         search() {
             SearchModel.list().then(data => {
-                this.submitted = true;
-                this.searchResult = data;
-            });
-            HistoryModel.add(this.query);
-            this.fetchHistory();
+                this.submitted = true
+                this.searchResult = data
+            })
+            HistoryModel.add(this.query)
+            this.fetchHistory()
         },
-
-        resetForm(e) {
-            this.query = '';
-            this.submitted = false;
-            this.searchResult = [];
-        },
+        resetForm() {
+            this.query = ''
+            this.submitted = false
+            this.searchResult = []
+        }
     }
 })
