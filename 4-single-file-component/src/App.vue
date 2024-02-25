@@ -4,7 +4,8 @@
       <h2 class="container">검색</h2>
     </header>
     <div class="container">
-      <search-form v-bind:value="query" v-on:@submit="onSubmit" v-on:@reset="onReset"></search-form>
+      <search-form v-bind:value="query" v-on:@submit="onSubmit" 
+        v-on:@reset="onReset"></search-form>
 
       <div class="content">
         <div v-if="submitted">
@@ -12,33 +13,32 @@
         </div>
         <div v-else>
           <tabs v-bind:tabs="tabs" v-bind:selected-tab="selectedTab" v-on:@change="onClickTab"></tabs>
-
           <div v-if="selectedTab === tabs[0]">
             <list v-bind:data="keywords" type="keywords" v-on:@click="onClickKeyword"></list>
           </div>
           <div v-else>
             <list v-bind:data="history" type="history" v-on:@click="onClickKeyword"
-                  v-on:@remove="onClickRemoveHistory"></list>
+              v-on:@remove="onClickRemoveHistory"></list>
           </div>
         </div>
       </div>
-    </div>
+    </div>  
   </div>
 </template>
 
 <script>
-import HistoryModel from "../../3-component/js/models/HistoryModel.js";
-import KeywordModel from "../../3-component/js/models/KeywordModel.js";
-import SearchModel from "../../3-component/js/models/SearchModel.js";
+import HistoryModel from './models/HistoryModel.js'
+import SearchModel from './models/SearchModel.js'
+import KeywordModel from './models/KeywordModel.js'
 
-import FormComponent from "./components/FormComponent.vue";
-import ResultComponent from "./components/ResultComponent.vue";
-import ListComponent from "./components/ListComponent.vue";
-import TabComponent from "./components/TabComponent.vue";
+import FormComponent from './components/FormComponent.vue'
+import ResultComponent from './components/ResultComponent.vue'
+import ListComponent from './components/ListComponent.vue'
+import TabComponent from './components/TabComponent.vue'
 
 export default {
-  name: 'App',
-  data() {
+  name: 'app',
+  data () {
     return {
       query: '',
       submitted: false,
@@ -47,7 +47,7 @@ export default {
       keywords: [],
       history: [],
       searchResult: []
-    };
+    }
   },
   components: {
     'search-form': FormComponent,
@@ -105,3 +105,6 @@ export default {
   }
 }
 </script>
+
+<style>
+</style>

@@ -7,12 +7,12 @@
     </ul>
   </div>
   <div v-else>
-    {{query}} 검색어로 찾을수 없습니다
+    {{query}} 검색어로 찾을수 없습니다 
   </div>
 </template>
 
 <script>
-  export default {
-    props: ['data', 'query']
-  }
+export default {
+  props: ['data', 'query']
+}
 </script>
