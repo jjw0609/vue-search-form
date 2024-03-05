@@ -1,7 +1,7 @@
 <template>
   <div v-if="data.length">
     <ul>
-      <li v-for="item in data">
+      <li v-for="item in data" v-bind:key="item.id">
         <img v-bind:src="item.image"> {{item.name}}
       </li>
     </ul>

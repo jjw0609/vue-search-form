@@ -2,7 +2,7 @@
   <div v-if="data.length">
     <ul class="list">
       <li v-for="(item, index) in data" 
-          v-on:click="onClickList(item.keyword)">
+          v-on:click="onClickList(item.keyword)" v-bind:key="item.id">
         <span v-if="type === 'keyword'" class="number">{{index + 1}}</span> 
         {{item.keyword}}
         <span v-if="type === 'history'" class="date">{{item.date}}</span>
