@@ -107,5 +107,5 @@ export default {
 </script>
 
 <style>
-@import "https://style.css";
+@import "https://jjw0609.github.io/vue-search-form/css/style.css";
 </style>
