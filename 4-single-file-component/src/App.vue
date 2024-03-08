@@ -107,4 +107,5 @@ export default {
 </script>
 
 <style>
+@import "https://style.css";
 </style>
