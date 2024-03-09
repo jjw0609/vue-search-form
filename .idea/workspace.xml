@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9694e911-7609-4e55-9dc2-18ae8a2aef4e" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Yl1Erg9QW3nPGjwNAJPg64f6ps" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/project/vue-search-form&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2022.3.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\project\vue-search-form" />
+      <recent name="C:\project\vue-search-form\4-single-file-component" />
+      <recent name="C:\project\vue-search-form\4-single-file-component\src" />
+      <recent name="C:\project\vue-search-form\4-single-file-component\assets" />
+      <recent name="C:\project\vue-search-form\4-single-file-component\src\components" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\project\vue-search-form\4-single-file-component" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9694e911-7609-4e55-9dc2-18ae8a2aef4e" name="Changes" comment="" />
+      <created>1701085243492</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701085243492</updated>
+      <workItem from="1701085244803" duration="5000" />
+      <workItem from="1701343344975" duration="2621000" />
+      <workItem from="1701522332684" duration="1206000" />
+      <workItem from="1701603789468" duration="892000" />
+      <workItem from="1702126014909" duration="1800000" />
+      <workItem from="1702467149782" duration="532000" />
+      <workItem from="1702821234913" duration="2143000" />
+      <workItem from="1702988862344" duration="785000" />
+      <workItem from="1703078138597" duration="600000" />
+      <workItem from="1703163660380" duration="716000" />
+      <workItem from="1703342829887" duration="3276000" />
+      <workItem from="1704030420361" duration="15000" />
+      <workItem from="1704034096713" duration="352000" />
+      <workItem from="1704035419951" duration="653000" />
+      <workItem from="1704101134370" duration="2777000" />
+      <workItem from="1704109348644" duration="1901000" />
+      <workItem from="1704284332548" duration="1143000" />
+      <workItem from="1704373676547" duration="15000" />
+      <workItem from="1704464164040" duration="183000" />
+      <workItem from="1704628488327" duration="777000" />
+      <workItem from="1704715333370" duration="984000" />
+      <workItem from="1704893575963" duration="938000" />
+      <workItem from="1705154574185" duration="2761000" />
+      <workItem from="1705581556001" duration="1091000" />
+      <workItem from="1706619401445" duration="994000" />
+      <workItem from="1707133240276" duration="385000" />
+      <workItem from="1707134013699" duration="2795000" />
+      <workItem from="1707574262818" duration="6477000" />
+      <workItem from="1707911736197" duration="3370000" />
+      <workItem from="1707997315597" duration="17309000" />
+      <workItem from="1708868489466" duration="5961000" />
+      <workItem from="1709385033070" duration="633000" />
+      <workItem from="1709644866046" duration="4184000" />
+      <workItem from="1709906837327" duration="7378000" />
+      <workItem from="1709993453278" duration="349000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
