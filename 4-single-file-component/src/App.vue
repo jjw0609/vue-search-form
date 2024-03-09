@@ -4,8 +4,8 @@
       <h2 class="container">검색</h2>
     </header>
     <div class="container">
-      <search-form v-bind:value="query" v-on:@submit="onSubmit" 
-        v-on:@reset="onReset"></search-form>
+      <search-form v-bind:value="query" v-on:@submit="onSubmit"
+                   v-on:@reset="onReset"></search-form>
 
       <div class="content">
         <div v-if="submitted">
@@ -18,11 +18,11 @@
           </div>
           <div v-else>
             <list v-bind:data="history" type="history" v-on:@click="onClickKeyword"
-              v-on:@remove="onClickRemoveHistory"></list>
+                  v-on:@remove="onClickRemoveHistory"></list>
           </div>
         </div>
       </div>
-    </div>  
+    </div>
   </div>
 </template>
 
@@ -107,5 +107,4 @@ export default {
 </script>
 
 <style>
-@import "https://jjw0609.github.io/vue-search-form/css/style.css";
 </style>
